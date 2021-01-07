@@ -1,0 +1,32 @@
+$dark: #041728;
+$secondary: #073636; // #0F5150; // #3C6E71;
+$accent: aquamarine;
+$light: #F7FFFC;
+
+@import './navigation';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+body{
+    background-color: $dark;
+    color: $light;
+    margin: 0;
+    /* div{
+        h1{
+            font-size: 3rem;
+            
+        }
+    } */
+}
+h1.heading{
+    margin: 0;
+    padding-left: 25%;
+    padding-top: 5%;
+    font-size: 3rem;
+    color: $accent;
+    font-style: italic;
+}
