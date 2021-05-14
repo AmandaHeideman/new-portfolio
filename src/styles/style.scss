@@ -1,6 +1,6 @@
 $dark: #041728;
 $secondary: #073636; // #0F5150; // #3C6E71;
-$accent: aquamarine;
+$accent: #88f6da;
 $light: #F7FFFC;
 
 @import './navigation';
@@ -15,18 +15,15 @@ body{
     background-color: $dark;
     color: $light;
     margin: 0;
-    /* div{
-        h1{
-            font-size: 3rem;
-            
-        }
-    } */
 }
-h1.heading{
-    margin: 0;
-    padding-left: 25%;
-    padding-top: 5%;
-    font-size: 3rem;
-    color: $accent;
-    font-style: italic;
+.heading{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .hello{
+        width: 300px;
+        padding-bottom: 3%;
+    }
 }

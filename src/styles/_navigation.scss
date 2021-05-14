@@ -1,9 +1,10 @@
 .nav{
     width: 15%;
     height: 100vh;
-    background-color: $secondary;
+    background-color: rgba(136, 246, 218, 0.25);
     float: left;
     display: flex;
+    
     ul{
         list-style: none;
         display: flex;
@@ -15,8 +16,10 @@
             a{
                 color: $light;
                 text-decoration: none;
+                transition: 0.3s;
                 &:hover, &:focus{
-                    color:aquamarine;
+                    color:$accent;
+                    margin-left: 5px;
                 }
             }
         }
