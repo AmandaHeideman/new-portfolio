@@ -8,7 +8,7 @@ import ProjectPage from './pages/ProjectPage';
 
 function App() {
   return (
-    <div>
+    <div className="grid">
       <Navigation />
 
       <Switch>

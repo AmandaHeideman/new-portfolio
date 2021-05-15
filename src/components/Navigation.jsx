@@ -6,6 +6,7 @@ export default function Navigation() {
     return (
         <div className = "nav">
             <ul>
+                <br />
                 <li>
                 <Link to="/">
                     Home

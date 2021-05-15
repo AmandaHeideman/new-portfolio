@@ -14,16 +14,22 @@ $light: #F7FFFC;
 body{
     background-color: $dark;
     color: $light;
-    margin: 0;
-}
-.heading{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .hello{
-        width: 300px;
-        padding-bottom: 3%;
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        .mainContent{
+            grid-column: 2 / span 4;
+            .heading{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding:0 5px;
+                .hello{
+                    width: 300px;
+                }
+            }
+        }
     }
 }
