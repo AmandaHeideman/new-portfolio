@@ -9,17 +9,21 @@ $light: #F7FFFC;
 
 *{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
+    line-height: 1.5;
+    
 }
 body{
+    /* background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover; */
     background-color: $dark;
     color: $light;
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-        .mainContent{
+        .container{
             grid-column: 2 / span 4;
-            .heading{
+            .frontPage{
                 height: 100vh;
                 display: flex;
                 justify-content: center;
@@ -28,6 +32,16 @@ body{
                 padding:0 5px;
                 .hello{
                     width: 300px;
+                }
+            }
+            .mainContent{
+                padding:10%;
+                a{
+                    text-decoration: none;
+                    color:$light;
+                    &:hover, &:focus{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
